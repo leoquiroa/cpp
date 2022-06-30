@@ -1,15 +1,23 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
   cout << "Hello World 1!" << endl;
 
   //All C++ variables must be identified with unique names.
+  //Basic Data Types
   int myNum = 5;               // Integer (whole number without decimals)
   double myFloatNum = 5.99;    // Floating point number (with decimals)
   char myLetter = 'D';         // Character
   string myText = "Hello";     // String (text)
   bool myBoolean = true;       // Boolean (true or false)
+
+  //boolean	  1 byte
+  //char	    1 byte
+  //int	      2 or 4 bytes
+  //float	    4 bytes
+  //double	  8 bytes
 
   cout << "I am " << myNum << " years old." << endl;
 
