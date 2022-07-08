@@ -10,6 +10,7 @@ struct car
 
 void printingCar (car variableCar) {
     cout<<variableCar.model<<"\n";
+    cout<<variableCar.year<<"\n";
     cout<<variableCar.ID<<"\n";
     cout<<"\n";
 }
@@ -31,6 +32,7 @@ int main ()
     // print cars[13] and cars[37]
     printingCar(cars[13]);
     printingCar(cars[37]);
+    printingCar(cars[79]);
 
 
 
