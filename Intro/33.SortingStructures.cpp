@@ -11,6 +11,12 @@ bool cmp(Car A, Car B)
     return (1.0*A.speed/A.price) > (1.0*B.speed/B.price);
 }
 
+void printCarInfo(Car *c){
+    for (int i=1; i<=6; ++i) {
+        cout << i << "-" << c[i].speed << "-" << c[i].price << "\n";
+    }
+}
+
 int main ()
 {
     cars[1].speed=100; cars[1].price=50;
@@ -20,8 +26,13 @@ int main ()
     cars[5].speed=97;  cars[5].price=45;
     cars[6].speed=97;  cars[6].price=89;
 
+    cout << "before" << "\n";
+    printCarInfo(cars);
+    
     sort (cars+1, cars+7, cmp);
-
+    
+    cout << "after" << "\n";
+    printCarInfo(cars);
 
     return 0;
 }
